@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.divider {
+  border-left: 1px solid gray;
+}
+
+.Login {
+  display: flex;
+  background-color: #fff;
+  padding-left: 230px;
+  justify-content: space-around;
+  width: 80%;
+  padding: 30px 150px 40px 150px;
+}
+
+.Login__header {
+  display: table;
+  margin: 0 auto;
+  color: #f68b1e;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+.Login__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login__username {
+  margin-bottom: 30px;
+}
+
+.Login__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+.Login__left {
+  width: 30%;
+}
+
+.Login__loginBtnOne {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f68b1e;
+  font-weight: 400;
+  margin-bottom: 30px !important;
+  width: 350px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login__loginBtnTwo {
+  display: flex;
+  justify-content: space-around;
+  background-color: #40588a;
+  font-weight: 400;
+  margin-bottom: 30px !important;
+  width: 350px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login__loginBtnThree {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f68b1e;
+  font-weight: 400;
+  margin-bottom: 30px !important;
+  width: 350px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login__loginBtnFour {
+  display: flex;
+  justify-content: space-around;
+  background-color: #40588a;
+  font-weight: 400;
+  margin-bottom: 30px !important;
+  width: 350px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login__right {
+  width: 30%;
+}
+
+.Login__btnInsider {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.Login__buttonsTwo {
+  margin-top: 30px;
+}
+
+.Login__createText {
+  margin-top: 100px;
+  color: black;
+}

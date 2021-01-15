@@ -1,0 +1,13 @@
+.productCategory {
+  border: none;
+  height: 350px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.productCategory__heading {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+}

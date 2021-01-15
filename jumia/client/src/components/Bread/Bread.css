@@ -1,0 +1,26 @@
+.Bread {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Bread > .MuiAvatar-colorDefault {
+}
+
+.aRed {
+  background-color: red !important;
+}
+
+.aBlue {
+  background-color: blue !important;
+}
+
+.aGreen {
+  background-color: green !important;
+}
+
+.aOrange {
+  background-color: orange !important;
+}

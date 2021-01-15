@@ -1,0 +1,15 @@
+.MiddlePanel {
+  flex: 0.5;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+.slick-list {
+  width: 400px;
+}
+
+.slick-dots {
+  color: red;
+  bottom: 0 !important;
+}

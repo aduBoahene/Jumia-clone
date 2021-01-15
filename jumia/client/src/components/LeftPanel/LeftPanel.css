@@ -1,0 +1,6 @@
+.LeftPanel {
+  background-color: white;
+  flex: 0.18;
+  border-radius: 5px;
+  padding: 10px;
+}

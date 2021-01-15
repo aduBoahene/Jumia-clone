@@ -1,0 +1,5 @@
+.RightPanel {
+  border: 1px solid white;
+  flex: 0.25;
+  border-radius: 5px;
+}

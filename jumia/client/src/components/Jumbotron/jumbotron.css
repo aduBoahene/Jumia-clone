@@ -1,0 +1,8 @@
+.jumbo {
+  width: 80%;
+  display: flex;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}

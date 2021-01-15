@@ -1,0 +1,11 @@
+.Sidebar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.Sidebar__text {
+  margin-left: 10px;
+  font-size: 0.7em;
+}
