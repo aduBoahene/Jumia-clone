@@ -31,15 +31,16 @@ function Login() {
     const dispatch = useDispatch();
 
 
-    const [username, setUsername]=useState('');
+    const [email, setEmail]=useState('');
     const [password, setPassword]=useState('');
     const [user,setUser]=useState({
-       
-    });
+        "email": '',
+        "password": ''
+      });
 
     const handleUsernameChange = (e)=>{
-        console.log("username",e.target.value)
-        setUsername(e.target.value)
+        console.log("email",e.target.value)
+        setEmail(e.target.value)
     }
 
     const handlePasswordChange = (e)=>{
@@ -47,31 +48,22 @@ function Login() {
         setPassword(e.target.value)
     }
     
-    const doLogin =(e)=>{
-        setUser(user =>({
-            ...user,
-            username,
-            password
-        }));
-    
-
-        console.log("user",user)
-        if(!username =="" || !password == ""){
-            dispatch(AttemptLogin(user));
-           
-        }        
+    const doLogin =(user)=>{
+        
+        console.log("userToBeSent",user)
+         dispatch(AttemptLogin(user));
+               
     }
 
     return (
         <div className="Login">
-            {/* <input type="text" name="username" onChange={handleUsernameChange} value={username}/>
-            <input type="text" name="password" onChange={handlePasswordChange} value={password}/>
-            <button onClick={doLogin}>Login</button> */}
             <div className="Login__left">
                 <h4 className="Login__header">Login</h4>
                 <div className="Login__form">
-                    <TextField label="Email" fullWidth className="Login__username" name="username" onChange={handleUsernameChange} value={username}/>
-                    <TextField label="Password" fullWidth className="Login__password" name="password" onChange={handlePasswordChange} value={password}/>
+                    <TextField label="Email" fullWidth className="Login__username" name="username"
+                             onChange={handleUsernameChange} value={email}/>
+                    <TextField label="Password" fullWidth className="Login__password"
+                             name="password" onChange={handlePasswordChange} value={password}/>
 
                     <div className="Login__footer">
                         <FormControlLabel control={<Checkbox name="checkedC" />} label="Remember me" />
@@ -80,7 +72,7 @@ function Login() {
                 </div>
 
                 <div className="Login__buttons">
-                    <div className="Login__loginBtnOne" onClick={doLogin}>
+                    <div className="Login__loginBtnOne" onClick={()=>doLogin({email,password})}>
                         <EmailOutlinedIcon />
                         <span>LOGIN</span>
                     </div>
@@ -93,7 +85,7 @@ function Login() {
                 </div>
             </div>
 
-            <span class="divider"> </span>
+            <span className="divider"> </span>
 
             <div className="Login__right">
             <h4 className="Login__header">Create your Jumia account</h4>

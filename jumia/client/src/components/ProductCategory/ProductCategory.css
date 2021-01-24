@@ -4,10 +4,36 @@
   border-radius: 5px;
   background-color: white;
   margin-bottom: 15px;
+  display: flex;
 }
 
 .productCategory__heading {
   padding: 15px;
   font-weight: bold;
   font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.productCategory__singleProduct{
+  display: flex;
+  flex-direction: column;
+}
+
+.productCategory__singleProduct > img {
+  width:200px;
+}
+
+.productCategory__productDetails{
+  padding-left:30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productCategory__oldAmount{
+  text-decoration: line-through;
+}
+
+.productCategory___newAmount{
+  font-weight: 600;
 }

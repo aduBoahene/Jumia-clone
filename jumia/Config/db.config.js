@@ -5,7 +5,7 @@
     host: "localhost",
     user: "postgres",
     password: "bbbold90001",
-    database: "uhuru"
+    database: "jumia"
   });
 
   module.exports={

@@ -13,10 +13,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const UserRoute = require("./Routes/User.route");
-const verifyToken = require("./MiddleWare/verifyToken")
+const verifyToken = require("./MiddleWare/verifyToken");
+const productRoute = require('./Routes/Product.route');
 
 
 app.use("/user" ,UserRoute);
+app.use("/product" ,productRoute);
 
 
 app.get("/",(req,res)=>{

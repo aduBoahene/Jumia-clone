@@ -3,4 +3,12 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-wrap:wrap ;
+}
+
+.horizontal__heading{
+  color:black;
+  font-weight:bold;
 }
