@@ -4,6 +4,7 @@ import ProductCategory from '../ProductCategory/ProductCategory'
 import './HorizontalListOfProducts.css'
 import image from '../../jumiaImages/3.png';
 import  {GetAllProducts} from '../../store/action'
+import { useHistory } from 'react-router-dom';
 
 
 export default function HorizontalListOfProducts({heading}) {
@@ -12,6 +13,8 @@ export default function HorizontalListOfProducts({heading}) {
     useEffect(()=>{
         dispatch(GetAllProducts());
     },[]);
+
+    let history = useHistory();
 
     const {products} = useSelector(state => state.productsReducer);
     console.log("product list data",products.data);
@@ -27,7 +30,7 @@ export default function HorizontalListOfProducts({heading}) {
                     newAmount={`GHC ${product.price}`}
                     // image="../../../public/logo512.png"
                     // image={`image${product.product_image}.jpg`}
-                    handleProductClick={()=>console.log("id",product.product_id)}
+                    handleProductClick={()=>history.push(`/productView/${product.product_id}`)}
                     />))}
             
         </div>

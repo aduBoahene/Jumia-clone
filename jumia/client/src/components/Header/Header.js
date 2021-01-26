@@ -34,6 +34,10 @@ const Header=()=> {
     const {user,isAuthenticated} = useSelector(state => state.auth);
     const dispatch = useDispatch();
 
+    const {cart} = useSelector(state => state.productsReducer);
+
+    console.log("cart",cart)
+
 
 
     const [anchorEl, setAnchorEl] = React.useState(null);
