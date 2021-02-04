@@ -1,0 +1,28 @@
+p {
+  color: white;
+}
+
+.BreadCrumb {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 10px; */
+}
+
+.BreadCrumb__layout {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  /* width: 250px; */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.BreadCrumb__text {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.BreadCrumb:not(:last-child) { 
+  margin-right:10px;
+ }

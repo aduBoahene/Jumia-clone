@@ -1,0 +1,65 @@
+.createAccount {
+  background-color: white;
+  padding-bottom: 50px;
+  margin-top: -23px;
+}
+
+.createAccount__header {
+  color: #f68b1e;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.createAccount__body {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.createAccount__bodyThree {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.createAccount__password {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.createAccount__email {
+  flex: 0.5;
+}
+
+.createAccount__one {
+  background-color: #f68b1e;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.createAccount__two {
+  background-color: #40588a;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.createAccount__firstname {
+  margin-right: 10px;
+}
