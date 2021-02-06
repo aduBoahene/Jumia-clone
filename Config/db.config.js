@@ -14,5 +14,5 @@ require("dotenv").config();
 
   const pool = new Pool(process.env.NODE__ENV==="production"?proConfig:devConfig);
   
-  module.exports = pool;
+  module.exports = pool; 
 

@@ -9,11 +9,11 @@
     "npm":"6.14.9"
   },
   "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
     "dev": "concurrently \"node server.js\" \"npm run client\"",
     "start": "node server.js",
-    "heroku-postbuild":"cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
