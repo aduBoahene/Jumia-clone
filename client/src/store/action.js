@@ -30,9 +30,7 @@ export const Register = (user) => async (dispatch) => {
     
      await axios.post("/user/Register",user)
       .then(res =>{
-        // localStorage.setItem('token', res.data.accessToken);
-        // dispatch(setCurrentUser(jwt.decode(res.data.accessToken)))
-        // window.location="/"
+        window.location="/login"
         console.log("registered user", res)
       }
       ).catch(err=>{
@@ -53,6 +51,23 @@ export const Register = (user) => async (dispatch) => {
         ).catch(err=>{
           console.log("login error",err.response)
         }); 
-    };
+ };
+
+
+ 
+ export const SendEmail = (mailObject) => async (dispatch) => {
+       console.log("mail object",mailObject)
+  await axios.post("/product/sendMail",{mailObject})
+   .then(res =>{
+     //dispatch all products to store
+     dispatch({
+       type:"SEND_MAIL",
+       payload:res.data
+     });
+   }
+   ).catch(err=>{
+     console.log("login error",err.response)
+   }); 
+};
 
   

@@ -1,17 +1,17 @@
 
 const initialState = {
-    isLoading:false,
     products:[],
-    cart:[]
+    cart:[],
+    mailSent:false
 }
 
 
 export default function productsReducer(state=initialState,action){
     switch(action.type){
-        case "SET_LOADING":
+        case "SEND_MAIL":
             return {
                 ...state, 
-                isLoading:true,
+                mailSent:true
             }
         case "SET_PRODUCTS":
         return {
