@@ -12,7 +12,7 @@ require("dotenv").config();
 
   const proConfig = process.env.DATABASE_URL;
 
-  const pool = new Pool(process.env.NODE__ENV==="production"?proConfig:devConfig);
+  const pool = new Pool(devConfig);
   
   module.exports = pool; 
 
