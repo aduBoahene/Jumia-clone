@@ -55,9 +55,14 @@ export const Register = (user) => async (dispatch) => {
 
 
  
- export const SendEmail = (mailObject) => async (dispatch) => {
-       console.log("mail object",mailObject)
-  await axios.post("/product/sendMail",{mailObject})
+ export const SendEmail = (userEmail) => async (dispatch) => {
+       console.log("mail object",userEmail)
+  await axios.post("/product/sendMail",{
+      "from":"boahenepatrick2@gmail.com",
+      "to":userEmail,
+      "subject":"Jumia",
+      "text":"Your order has been proccesed",
+  })
    .then(res =>{
      //dispatch all products to store
      dispatch({
@@ -66,7 +71,7 @@ export const Register = (user) => async (dispatch) => {
      });
    }
    ).catch(err=>{
-     console.log("login error",err.response)
+     console.log("email error",err.response)
    }); 
 };
 

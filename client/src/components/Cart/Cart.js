@@ -63,15 +63,9 @@ export default function Cart() {
     const sendMail=()=>{
 
       //req.body.from,req.body.to,req.body.subject,req.body.text
-      console.log("sending mail..........");
+      console.log("sending mail..........",user.email);
 
-      const mailObject = {
-        "from":"boahenepatrick2@gmail.com",
-        "to":user.email,
-        "subject":"Jmia",
-        "text":"Your order has been proccesed",
-      }
-      dispatch(SendEmail(mailObject));
+      dispatch(SendEmail(user.email));
     }
 
 
